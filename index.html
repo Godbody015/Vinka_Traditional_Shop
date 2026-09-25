@@ -1,251 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Vinka Traditional Shop</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinka Traditional Shop</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="nav">
-    <div class="brand">
-      <img src="assets/images/vinka-mark.jpeg" alt="Vinka Traditional Shop mark">
-      <div class="brand-text">
-        <div class="name">Vinka</div>
-        <div class="sub">TRADITIONAL SHOP</div>
-      </div>
-    </div>
-    <nav class="links">
-      <button class="active" data-page="home" onclick="goPage('home')">Home</button>
-      <button data-page="products" onclick="goPage('products')">Products</button>
+  <div class="container nav">
+    <h2 class="logo">VINKA</h2>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
   </div>
 </header>
 
-<!-- ============ HOME PAGE ============ -->
-<section id="page-home" class="page active">
+<section class="hero">
+  <div class="container hero-content">
 
-  <div class="hero">
-    <svg class="diamond-motif" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="100" cy="100" r="98" fill="none" stroke="#C8973F" stroke-width="1"/>
-      <polygon points="100,20 180,100 100,180 20,100" fill="none" stroke="#C8973F" stroke-width="1"/>
-      <polygon points="100,30 145,100 100,100 55,100" fill="#7E2233" opacity="0.55"/>
-      <polygon points="100,100 145,100 100,170 55,100" fill="#3C5A34" opacity="0.55"/>
-    </svg>
-    <div class="wrap hero-inner">
-      <div>
-        <div class="eyebrow-mark"><span class="dot"></span><span>JOHANNESBURG · SOUTH AFRICA</span></div>
-        <h1>Handcrafted heritage,<br><em>worn every day.</em></h1>
-        <p class="lede">Vinka Traditional Shop brings together handmade sandals, beaded bags and traditional home pieces — made by South African hands, for everyday life.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#" onclick="goPage('products');return false;">Browse Products</a>
-          <a class="btn btn-ghost" href="https://wa.me/27600000000?text=Hi%20Vinka%2C%20I%27d%20like%20to%20know%20more%20about%20your%20products" target="_blank" rel="noopener">Chat on WhatsApp</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="frame">
-          <img src="assets/images/handmade-sandals.jpeg" alt="Handmade sandals">
-        </div>
-        <div class="caption">Woven-strap sandals — made to order</div>
-      </div>
-    </div>
+    <h1>Traditional Products. Cultural Identity. Modern Shopping.</h1>
+
+    <p>
+      Discover authentic traditional clothing, jewellery,
+      accessories and handcrafted cultural products.
+    </p>
+
+    <a href="#" class="btn">Shop Collection</a>
+
   </div>
+</section>
 
-  <div class="strip">
-    <div class="wrap">
-      <span>Handmade in South Africa</span>
-      <span>Order &amp; collect or delivery</span>
-      <span>WhatsApp for sizes &amp; colours</span>
-    </div>
-  </div>
+<section class="categories container">
 
-  <div class="section">
-    <div class="wrap about-grid">
-      <div class="plate">
-        <h3>Rooted in craft</h3>
-        <p>Every piece at Vinka is put together the traditional way — hand-strung beads, woven straps, stitched hide — so what you carry or wear has a story behind it, not just a price tag.</p>
-        <div class="swatches">
-          <span style="background:#C8973F"></span>
-          <span style="background:#7E2233"></span>
-          <span style="background:#3C5A34"></span>
-          <span style="background:#130E0B"></span>
-        </div>
-      </div>
-      <div>
-        <span class="kicker" style="color:var(--crimson); font-size:.72rem; letter-spacing:.22em;">WHAT WE MAKE</span>
-        <h2 style="margin-top:10px;">Sandals, bags &amp; home pieces made to last</h2>
-        <p style="margin-top:14px; color:#4a4038;">From beaded tote bags to patchwork hide cushion covers, every item is picked or made for people who want something with real character — not mass-produced. Message us on WhatsApp for current stock, sizing and colours.</p>
-      </div>
-    </div>
-  </div>
+  <h2>Our Collection</h2>
 
-  <div class="section" style="padding-top:0;">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">FEATURED</span>
-        <h2>A few favourites</h2>
-        <p>A small taste of what's currently in the shop — see the full range on the Products page.</p>
-      </div>
-      <div class="preview-grid">
-        <div class="p-card">
-          <div class="imgwrap"><img src="assets/images/handmade-sandals.jpeg" alt="Red woven sandals"></div>
-          <div class="meta"><span class="cat">Footwear</span><h4>Woven Strap Sandals</h4><div class="price">From R350</div></div>
-        </div>
-        <div class="p-card">
-          <div class="imgwrap"><img src="assets/images/beaded-tote-bag.jpeg" alt="Beaded tote bag"></div>
-          <div class="meta"><span class="cat">Bags</span><h4>Beaded Tote — Mono</h4><div class="price">From R480</div></div>
-        </div>
-        <div class="p-card">
-          <div class="imgwrap"><img src="assets/images/hide-patchwork-cushion.jpeg" alt="Hide patchwork cushion cover"></div>
-          <div class="meta"><span class="cat">Home</span><h4>Patchwork Hide Cover</h4><div class="price">From R420</div></div>
-        </div>
-      </div>
-      <div class="view-all">
-        <a class="btn btn-primary" style="background:var(--black); color:var(--ivory);" href="#" onclick="goPage('products');return false;">View all products</a>
-      </div>
-    </div>
-  </div>
+  <div class="grid">
 
-  <div class="visit">
-    <div class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="kicker">VISIT / CONTACT</span>
-          <h2>Come see the pieces in person</h2>
-          <p>Or skip the trip — send us a WhatsApp message and we'll sort sizing, colours and delivery from there.</p>
-        </div>
-        <div class="visit-grid">
-          <div class="visit-info">
-            <div class="info-row">
-              <div class="ico">📍</div>
-              <div><h4>Location</h4><p>Johannesburg, South Africa<br>(exact address on request via WhatsApp)</p></div>
-            </div>
-            <div class="info-row">
-              <div class="ico">🕑</div>
-              <div><h4>Hours</h4><p>Mon – Sat, 09:00 – 17:00<br>Closed Sundays &amp; public holidays</p></div>
-            </div>
-            <div class="info-row">
-              <div class="ico">💬</div>
-              <div><h4>WhatsApp</h4><p>Fastest way to reach us — tap the green button anytime.</p></div>
-            </div>
-            <a class="btn btn-primary" style="align-self:flex-start;" href="https://wa.me/27600000000" target="_blank" rel="noopener">Message us on WhatsApp</a>
-          </div>
-          <div class="map-box">
-            <iframe src="https://www.google.com/maps?q=Johannesburg,South%20Africa&output=embed" loading="lazy" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="card">Traditional Clothing</div>
+    <div class="card">Accessories</div>
+    <div class="card">Jewellery</div>
+    <div class="card">Handmade Products</div>
+
   </div>
 
 </section>
 
-<!-- ============ PRODUCTS PAGE ============ -->
-<section id="page-products" class="page">
+<section class="about">
 
-  <div class="products-hero">
-    <div class="wrap">
-      <span class="kicker">THE FULL RANGE</span>
-      <h1>Products</h1>
-      <p>Every piece is handmade or hand-finished in small batches, so stock changes often. Message us on WhatsApp to confirm what's available before you visit.</p>
-    </div>
-  </div>
+  <div class="container">
 
-  <div class="wrap">
-    <div class="filter-row">
-      <button class="active" data-filter="all" onclick="filterProducts('all', this)">All</button>
-      <button data-filter="footwear" onclick="filterProducts('footwear', this)">Footwear</button>
-      <button data-filter="bags" onclick="filterProducts('bags', this)">Bags</button>
-      <button data-filter="home" onclick="filterProducts('home', this)">Home</button>
-    </div>
+    <h2>About Vinka</h2>
 
-    <div class="full-grid" id="product-grid">
+    <p>
+      Vinka Traditional Shop celebrates African culture by combining
+      authentic traditional products with a simple and accessible
+      online shopping experience.
+    </p>
 
-      <div class="p-card" data-cat="footwear">
-        <div class="imgwrap"><img src="assets/images/handmade-sandals.jpeg" alt="Red woven sandals"></div>
-        <div class="meta">
-          <span class="cat">Footwear</span>
-          <h4>Woven Strap Sandals — Red</h4>
-          <div class="price">R350</div>
-          <a class="enquire-link" target="_blank" rel="noopener" href="https://wa.me/27600000000?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20the%20Woven%20Strap%20Sandals%20(Red)">Enquire on WhatsApp →</a>
-        </div>
-      </div>
-
-      <div class="p-card" data-cat="footwear">
-        <div class="imgwrap"><img src="assets/images/white-woven-sandals.jpeg" alt="White woven sandals"></div>
-        <div class="meta">
-          <span class="cat">Footwear</span>
-          <h4>Woven Strap Sandals — White</h4>
-          <div class="price">R350</div>
-          <a class="enquire-link" target="_blank" rel="noopener" href="https://wa.me/27600000000?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20the%20Woven%20Strap%20Sandals%20(White)">Enquire on WhatsApp →</a>
-        </div>
-      </div>
-
-      <div class="p-card" data-cat="bags">
-        <div class="imgwrap"><img src="assets/images/beaded-tote-bag.jpeg" alt="Black and white beaded tote"></div>
-        <div class="meta">
-          <span class="cat">Bags</span>
-          <h4>Beaded Tote — Mono Floral</h4>
-          <div class="price">R480</div>
-          <a class="enquire-link" target="_blank" rel="noopener" href="https://wa.me/27600000000?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20the%20Mono%20Floral%20Beaded%20Tote">Enquire on WhatsApp →</a>
-        </div>
-      </div>
-
-      <div class="p-card" data-cat="bags">
-        <div class="imgwrap"><img src="assets/images/colourful-beaded-tote.jpeg" alt="Colourful beaded tote"></div>
-        <div class="meta">
-          <span class="cat">Bags</span>
-          <h4>Beaded Tote — Rainbow</h4>
-          <div class="price">R520</div>
-          <a class="enquire-link" target="_blank" rel="noopener" href="https://wa.me/27600000000?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20the%20Rainbow%20Beaded%20Tote">Enquire on WhatsApp →</a>
-        </div>
-      </div>
-
-      <div class="p-card" data-cat="bags">
-        <div class="imgwrap"><img src="assets/images/patterned-tote.jpeg" alt="Black and white patterned tote"></div>
-        <div class="meta">
-          <span class="cat">Bags</span>
-          <h4>Beaded Tote — Mono Stripe</h4>
-          <div class="price">R480</div>
-          <a class="enquire-link" target="_blank" rel="noopener" href="https://wa.me/27600000000?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20the%20Mono%20Stripe%20Beaded%20Tote">Enquire on WhatsApp →</a>
-        </div>
-      </div>
-
-      <div class="p-card" data-cat="home">
-        <div class="imgwrap"><img src="assets/images/hide-patchwork-cushion.jpeg" alt="Hide patchwork cushion cover"></div>
-        <div class="meta">
-          <span class="cat">Home</span>
-          <h4>Patchwork Hide Cushion Cover</h4>
-          <div class="price">R420</div>
-          <a class="enquire-link" target="_blank" rel="noopener" href="https://wa.me/27600000000?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20the%20Patchwork%20Hide%20Cushion%20Cover">Enquire on WhatsApp →</a>
-        </div>
-      </div>
-
-    </div>
   </div>
 
 </section>
 
 <footer>
-  <div class="wrap">
-    <div class="fbrand">
-      <img src="assets/images/vinka-mark.jpeg" alt="Vinka mark">
-      <span>Vinka Traditional Shop</span>
-    </div>
-    <small>Johannesburg, South Africa · Message us on WhatsApp for orders</small>
+
+  <div class="container">
+
+    <h3>VINKA TRADITIONAL SHOP</h3>
+
+    <p>
+      Traditional products. Cultural identity. Modern shopping.
+    </p>
+
+    <p>© 2026 Vinka Traditional Shop</p>
+
   </div>
+
 </footer>
-
-<a class="wa-float" href="https://wa.me/27600000000?text=Hi%20Vinka%2C%20I%27d%20like%20to%20know%20more" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.61 1.912 6.482L4 29l7.71-1.874A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.75a9.7 9.7 0 0 1-4.94-1.352l-.354-.21-4.573 1.112 1.142-4.46-.23-.366A9.73 9.73 0 0 1 6.25 15c0-5.376 4.375-9.75 9.751-9.75S25.75 9.624 25.75 15 21.377 24.75 16.001 24.75zm5.34-7.29c-.293-.147-1.734-.856-2.003-.955-.269-.098-.465-.147-.66.147-.196.293-.758.955-.929 1.152-.171.196-.343.22-.636.073-.293-.147-1.236-.456-2.354-1.452-.87-.776-1.457-1.735-1.628-2.028-.171-.293-.018-.452.129-.598.132-.132.293-.343.44-.514.147-.171.196-.293.293-.489.098-.196.049-.367-.024-.514-.073-.147-.66-1.592-.905-2.181-.238-.573-.48-.495-.66-.504l-.562-.01c-.196 0-.514.073-.783.367-.269.293-1.026 1.002-1.026 2.443s1.051 2.834 1.198 3.03c.147.196 2.07 3.16 5.017 4.432.701.303 1.248.484 1.674.62.703.224 1.343.192 1.849.117.564-.084 1.734-.709 1.979-1.393.244-.684.244-1.27.171-1.393-.073-.122-.269-.196-.562-.343z"/></svg>
-</a>
-
-<script src="js/script.js" defer></script>
 
 </body>
 </html>
