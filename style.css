@@ -35,7 +35,11 @@ header{
   color:#7a3b0c;
   letter-spacing:2px;
 }
-
+.logo img{
+  height:48px;
+  width:auto;
+  display:block;
+}
 nav a{
   margin-left:22px;
   text-decoration:none;
