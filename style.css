@@ -47,7 +47,7 @@ nav a{
   background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
              url("assets/images/banners/hero.jpg");
   background-size:cover;
-  background-position:center;
+  background-position:left center;;
   color:white;
   min-height:75vh;
   display:flex;
