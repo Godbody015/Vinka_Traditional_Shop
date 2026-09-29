@@ -127,18 +127,25 @@ nav a:hover{
 }
 
 .card{
+  position:relative;
   background:#fffaf2;
-  padding:35px 20px 25px;
+  padding:41px 20px 25px;
   border-radius:10px;
   text-align:center;
   box-shadow:0 8px 20px rgba(0,0,0,.10);
-  border-top:6px solid var(--ochre);
+  overflow:hidden;
 }
 
-.card:nth-child(4n+1){ border-top-color:var(--rust); }
-.card:nth-child(4n+2){ border-top-color:var(--ochre); }
-.card:nth-child(4n+3){ border-top-color:var(--teal); }
-.card:nth-child(4n+4){ border-top-color:var(--deepbrown); }
+.card::before{
+  content:"";
+  position:absolute;
+  top:0; left:0; right:0;
+  height:22px;
+  background-color:var(--deepbrown);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22'%3E%3Crect width='44' height='22' fill='%233d2317'/%3E%3Cpath d='M11 3 L19 11 L11 19 L3 11 Z' fill='%23c98a2c'/%3E%3Ccircle cx='33' cy='11' r='4' fill='%23a8461f'/%3E%3Cpath d='M33 3 L33 19 M25 11 L41 11' stroke='%23f3e7d3' stroke-width='1' stroke-opacity='.4'/%3E%3C/svg%3E");
+  background-repeat:repeat-x;
+  background-size:44px 22px;
+}
 
 .card img{
   width:100%;
@@ -169,10 +176,23 @@ nav a:hover{
 }
 
 .product-card{
+  position:relative;
   background:#fffaf2;
   border-radius:10px;
   overflow:hidden;
   box-shadow:0 8px 20px rgba(0,0,0,.10);
+}
+
+.product-card::before{
+  content:"";
+  position:absolute;
+  top:0; left:0; right:0;
+  height:22px;
+  background-color:var(--deepbrown);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22'%3E%3Crect width='44' height='22' fill='%233d2317'/%3E%3Cpath d='M11 3 L19 11 L11 19 L3 11 Z' fill='%23c98a2c'/%3E%3Ccircle cx='33' cy='11' r='4' fill='%23a8461f'/%3E%3Cpath d='M33 3 L33 19 M25 11 L41 11' stroke='%23f3e7d3' stroke-width='1' stroke-opacity='.4'/%3E%3C/svg%3E");
+  background-repeat:repeat-x;
+  background-size:44px 22px;
+  z-index:1;
 }
 
 .product-card img{
